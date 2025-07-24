@@ -1,0 +1,27 @@
+{
+  "personalInfo": {
+    "name": "山田太郎",
+    "title": "フルスタックエンジニア",
+    "location": "東京都",
+    "email": "example@example.com"
+  },
+  "experience": [
+    {
+      "id": "1",
+      "company": "株式会社サンプル",
+      "position": "シニアエンジニア",
+      "startDate": "2020-01",
+      "endDate": "現在",
+      "description": "Webアプリケーションの設計・開発を担当",
+      "technologies": ["React", "Node.js", "TypeScript"],
+      "projects": [
+        {
+          "name": "プロジェクト名",
+          "description": "プロジェクトの詳細説明",
+          "role": "担当した役割",
+          "technologies": ["使用技術1", "使用技術2"]
+        }
+      ]
+    }
+  ]
+}

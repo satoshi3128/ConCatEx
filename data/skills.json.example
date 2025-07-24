@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "name": "フロントエンド",
+      "skills": [
+        {
+          "name": "React",
+          "level": 90,
+          "experience": "3年"
+        },
+        {
+          "name": "TypeScript",
+          "level": 85,
+          "experience": "2年"
+        }
+      ]
+    },
+    {
+      "name": "バックエンド",
+      "skills": [
+        {
+          "name": "Node.js",
+          "level": 80,
+          "experience": "2年"
+        },
+        {
+          "name": "Python",
+          "level": 75,
+          "experience": "1年"
+        }
+      ]
+    }
+  ]
+}

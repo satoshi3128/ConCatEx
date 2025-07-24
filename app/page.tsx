@@ -5,11 +5,11 @@ import SkillsSection from '@/components/SkillsSection';
 import FloatingElements from '@/components/FloatingElements';
 
 export default async function Home() {
-  const [resumeData, aboutContent, skillsData] = await Promise.all([
+  const [resumeData, aboutContent, skillsData, activitiesContent] = await Promise.all([
     getResumeData(),
     getMarkdownContent('about.md'),
     getSkillsData(),
-    // getMarkdownContent('activities.md'), // 活動セクション一時非表示
+    getMarkdownContent('activities.md'),
   ]);
 
   // const recentProjects = resumeData.slice(0, 5);
@@ -80,15 +80,24 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 活動セクション - 一時的に非表示 (内容確定後に復活) */}
-      {/* <section
+      {/* 活動セクション */}
+      <section
         id="activities"
-        className="min-h-screen scroll-snap-section flex items-center justify-center px-8 py-16 section-gradient-4 relative"
+        className="min-h-screen scroll-snap-section flex items-center justify-center px-8 py-16 section-monochrome-4 relative"
       >
-        <div className="floating-element"></div>
-        <div className="floating-element"></div>
-        <div className="floating-element"></div>
+        <FloatingElements />
         <div className="max-w-4xl mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-color-text mb-4 animate-fade-in-up">
+              活動・アウトプット
+            </h2>
+            <p
+              className="text-xl text-color-text-muted animate-fade-in-up"
+              style={{ animationDelay: '0.2s' }}
+            >
+              技術的な取り組みと成果
+            </p>
+          </div>
           <div className="modern-card p-8 md:p-12 animate-fade-in-up">
             <div
               className="prose prose-lg max-w-none text-color-text"
@@ -96,7 +105,7 @@ export default async function Home() {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* お問い合わせセクション */}
       <section

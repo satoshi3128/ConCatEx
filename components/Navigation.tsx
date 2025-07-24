@@ -13,7 +13,7 @@ const Navigation = () => {
       { id: 'about', label: '自己紹介' },
       { id: 'career', label: '経歴' },
       { id: 'skills', label: 'スキル' },
-      // { id: 'activities', label: '活動' }, // 一時的に非表示
+      { id: 'activities', label: '活動' },
       { id: 'contact', label: 'お問い合わせ' },
     ],
     []
